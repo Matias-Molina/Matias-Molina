@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #febf00;
+    text-decoration: none;
+}
+.logo {
+    width: 100px;
+
+    top: 20px;
+    left: 20px;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #febf00;
+}
+.nav-responsive{
+    background-color: #febf00;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION I N I C I O */
+
+.inicio{
+    background: #080808;
+    background-size: cover;
+    height: 110vh;
+    color: #000000;
+    display: flex;
+    align-items: top;
+    background-image: url(img/fondoelegante1.png);
+    
+}
+.contenedor-img{
+
+    width: 100%;
+    margin-bottom: 20px;
+    z-index: 1;
+
+
+}
+.redes {
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+.boton1 {
+    position: relative;
+    border-radius: 3%;
+    background-color: #3f3f3f;
+    width: 100%;
+    height: 100%;
+    max-height: 160px;
+    max-width: 360px;
+    margin-top: 30px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+.boton2 {
+    position: relative;
+    border-radius: 3%;
+
+    width: 100%;
+    height: 100%;
+    max-height: 160px;
+    max-width: 360px;
+    margin-top: 30PX;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+.imagen2{
+    position: relative;
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
+    max-height: 160px;
+    max-width: 360px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.inicio .contenido-banner{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 3px solid   rgba(0, 0, 0, 0.034); /* Borde de color amarillo con transparencia */
+    
+}
+.foto{
+    position: relative;
+    padding: 20px;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-5%); /* Opcional, para ajustar la posición */
+    max-height: 500px;
+    max-width: 440px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 5%;
+    opacity: 0.9;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para crear efecto de profundidad */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde con color y transparencia */
+
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    border-radius: 5%;
+    
+}
+.inicio .contenido-banner h1{
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'rubik black';
+    color: #fff;
+}
+.letras{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'montserrat';
+    color: #fff;
+}
+.letras h1{
+    font-family: "rubik";
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio  .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    line-height: 42px;
+    margin: 10px 5px;
+    font-size: 20px;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.move-red{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.inicio .redes a:hover{
+    background-color: #febf00;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    .texto{
+        color: #fff;
+        font-size: 60px;
+            font-style: normal;
+            font-family: "rubik black";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 0; /* Texto detrás de la imagen */
+            color: #fff
+    }
+    .Nombre{
+        color: #fff;
+            font-size: 60px;
+            font-style: normal;
+            font-family: "rubik black";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 0; /* Texto detrás de la imagen */
+            color: #fff;
+            color: transparent; /* Hace el relleno del texto transparente */
+            -webkit-text-stroke: 2px #ffcc00; /* Trazo amarillo de 2px */
+            text-align: center;
+            text-shadow: 0 0 5px #000000, 0 0 5px #febf00, 0 0 5px #febf00,
+             0 0 10px #febf00, 0 0 20px #febf00; /* Efecto de neón */
+            -webkit-text-stroke: 1px #febf00; /* Trazo del texto neón */
+    
+    }
+    
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #000000;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .texto{
+        color: #fff;
+        font-size: 65px;
+            font-style: normal;
+            font-family: "rubik black";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 0; /* Texto detrás de la imagen */
+            color: #fff
+    }
+    .Nombre{
+        color: #fff;
+            font-size: 70px;
+            font-style: normal;
+            font-family: "rubik black";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 0; /* Texto detrás de la imagen */
+            color: #fff;
+            color: transparent; /* Hace el relleno del texto transparente */
+            -webkit-text-stroke: 2px #ffcc00; /* Trazo amarillo de 2px */
+            text-align: center;
+            text-shadow: 0 0 5px #000000, 0 0 5px #febf00, 0 0 5px #febf00,
+             0 0 10px #febf00, 0 0 20px #febf00; /* Efecto de neón */
+            -webkit-text-stroke: 1px #febf00; /* Trazo del texto neón */
+    
+    }
+
+
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
